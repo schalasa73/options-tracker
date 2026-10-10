@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Campaigns</title>
+<style>
+:root{
+  --paper:#f3f2ed; --card:#faf9f6; --ink:#23262a; --muted:#71757c;
+  --line:#e2e0d9; --pos:#1d7a4d; --neg:#b3261e; --accent:#2f5d8a;
+  --chip:#eceae3;
+}
+:root:not([data-theme="light"]){ }
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#16181b; --card:#1d2024; --ink:#e8e6e1; --muted:#9aa0a8;
+    --line:#2c3037; --pos:#4ac98a; --neg:#f2635a; --accent:#7fb0e0; --chip:#262a30;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#16181b; --card:#1d2024; --ink:#e8e6e1; --muted:#9aa0a8;
+  --line:#2c3037; --pos:#4ac98a; --neg:#f2635a; --accent:#7fb0e0; --chip:#262a30;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:14px/1.5 ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent)}
+.topbar{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap;
+  padding:14px 16px;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}
+.topbar .spx{color:var(--ink);font-weight:600}
+.topbar .source{font-style:italic}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:15px;font-weight:600;color:var(--muted);letter-spacing:.02em;margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;
+  padding:20px;margin-bottom:18px}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.05em;
+  color:var(--muted);font-weight:600;padding:0 10px 8px 0;border-bottom:1px solid var(--line)}
+td{padding:11px 10px 11px 0;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+.sub{color:var(--muted);font-size:12px}
+.pos{color:var(--pos)} .neg{color:var(--neg)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:18px 0}
+.stat .k{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.stat .v{font-size:17px;margin-top:3px}
+.chip{display:inline-block;padding:2px 8px;border-radius:999px;background:var(--chip);
+  font-size:11px;color:var(--muted)}
+.status-open{color:var(--pos);font-weight:600}
+.status-planned{color:var(--accent);font-weight:600}
+.status-closed{color:var(--muted)}
+.chip.risk{background:var(--neg);color:#fff;font-weight:600}
+.ticket{background:var(--chip);border:1px dashed var(--line);border-radius:8px;
+  padding:12px 14px;margin:12px 0;font-family:ui-monospace,Menlo,Consolas,monospace;
+  font-size:12.5px;white-space:pre-wrap;word-break:break-word}
+.action-title{font-size:17px;margin:4px 0 6px}
+.right{text-align:right}
+.legs td:first-child{width:52px;color:var(--muted);font-size:12px}
+svg{display:block;width:100%;height:auto}
+@media (max-width:760px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .wrap{padding:16px}
+  table{font-size:13px}
+}
+</style>
+</head>
+<body>
+<div class="topbar"><span>Options Strategist</span><span>Eastern Time Oct 10 &middot; 07:25:33 PM</span></div>
+<div class="wrap"><h1>A14 weekly SPX campaign</h1><div class='card'><div class='sub'>SPX CAMPAIGNS</div><div class='action-title'><a href='a14/'>Open 1 &middot; closed 3 &middot; 100% won</a></div><div class='sub'>As of Oct 10, 07:25 PM ET</div><div class='stats'><div class='stat'><div class='k'>Realized P/L</div><div class='v pos'>+$495.96</div></div><div class='stat'><div class='k'>Open P/L</div><div class='v neg'>-$28.00</div></div><div class='stat'><div class='k'>Next action</div><div class='v '>None</div></div></div></div><h1>BWB Alert Tracker</h1><div class='card'><div class='sub'>CALL &amp; PUT BWB ALERTS</div><div class='action-title'><a href='bwb/'>Open 9 &middot; closed 15 &middot; 100% won</a></div><div class='stats'><div class='stat'><div class='k'>Realized P/L</div><div class='v pos'>+$1,301.00</div></div><div class='stat'><div class='k'>Open P/L (last check)</div><div class='v neg'>-$405.00</div></div></div></div><h1>Lottery</h1><div class='card'><div class='sub'>X TRADE ALERTS</div><div class='action-title'><a href='lottery/'>Open 2 &middot; closed 1 &middot; 100% won</a></div><div class='stats'><div class='stat'><div class='k'>Realized P/L</div><div class='v pos'>+$1,976.19</div></div></div></div><p class='sub' style='margin-top:28px'>A snapshot, not a live view: published Oct 10, 07:25 PM ET and refreshed each trading day at 11:00, 16:05, 16:15 ET. A recommendation is never counted as a position until its fill is confirmed.</p></div>
+</body>
+</html>

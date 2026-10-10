@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A14 weekly SPX campaign campaigns</title>
+<style>
+:root{
+  --paper:#f3f2ed; --card:#faf9f6; --ink:#23262a; --muted:#71757c;
+  --line:#e2e0d9; --pos:#1d7a4d; --neg:#b3261e; --accent:#2f5d8a;
+  --chip:#eceae3;
+}
+:root:not([data-theme="light"]){ }
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#16181b; --card:#1d2024; --ink:#e8e6e1; --muted:#9aa0a8;
+    --line:#2c3037; --pos:#4ac98a; --neg:#f2635a; --accent:#7fb0e0; --chip:#262a30;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#16181b; --card:#1d2024; --ink:#e8e6e1; --muted:#9aa0a8;
+  --line:#2c3037; --pos:#4ac98a; --neg:#f2635a; --accent:#7fb0e0; --chip:#262a30;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:14px/1.5 ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent)}
+.topbar{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap;
+  padding:14px 16px;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}
+.topbar .spx{color:var(--ink);font-weight:600}
+.topbar .source{font-style:italic}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:15px;font-weight:600;color:var(--muted);letter-spacing:.02em;margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;
+  padding:20px;margin-bottom:18px}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.05em;
+  color:var(--muted);font-weight:600;padding:0 10px 8px 0;border-bottom:1px solid var(--line)}
+td{padding:11px 10px 11px 0;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+.sub{color:var(--muted);font-size:12px}
+.pos{color:var(--pos)} .neg{color:var(--neg)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:18px 0}
+.stat .k{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.stat .v{font-size:17px;margin-top:3px}
+.chip{display:inline-block;padding:2px 8px;border-radius:999px;background:var(--chip);
+  font-size:11px;color:var(--muted)}
+.status-open{color:var(--pos);font-weight:600}
+.status-planned{color:var(--accent);font-weight:600}
+.status-closed{color:var(--muted)}
+.chip.risk{background:var(--neg);color:#fff;font-weight:600}
+.ticket{background:var(--chip);border:1px dashed var(--line);border-radius:8px;
+  padding:12px 14px;margin:12px 0;font-family:ui-monospace,Menlo,Consolas,monospace;
+  font-size:12.5px;white-space:pre-wrap;word-break:break-word}
+.action-title{font-size:17px;margin:4px 0 6px}
+.right{text-align:right}
+.legs td:first-child{width:52px;color:var(--muted);font-size:12px}
+svg{display:block;width:100%;height:auto}
+@media (max-width:760px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .wrap{padding:16px}
+  table{font-size:13px}
+}
+</style>
+</head>
+<body>
+<div class="topbar"><a href="../index.html">&larr; All strategies</a><span>Eastern Time Oct 10 &middot; 07:25:33 PM</span><span class="spx">SPX 7,811.54</span><span class="source">As of Oct 10, 07:25 PM ET</span></div>
+<div class="wrap"><h1>A14 weekly SPX campaign</h1><div class='card'><div class='sub'>CAMPAIGNS</div><div class='action-title'>Open 1 &middot; total 4</div><table><thead><tr><th>Status</th><th>Entry/Exit</th><th>Position</th><th>NET</th><th>Now</th></tr></thead><tbody><tr><td><span class='status-open'>Open</span></td><td class='sub'>Entry: 10/09/2026</td><td><a href='campaign-2026-W41-SPX.html'>Put Broken Wing Oct23&#x27;26 | +2 $7820 | -4 $7780 | +2 $7730</a><br><span class='sub'>SPX &middot; expires 10/23/2026</span></td><td>$320.00 DEBIT<br><span class='sub'>commissions $8.00</span></td><td><span class='sub'>No action</span><br><span class='neg'>P/L -$28.00</span></td></tr><tr><td><span class='status-closed'>Closed</span></td><td class='sub'>Entry: 10/02/2026<br><span class='sub'>Exit: 10/05/2026</span></td><td><a href='campaign-2026-W40-SPX.html'>Put Broken Wing Oct16&#x27;26 | +2 $7720 | -4 $7680 | +2 $7630 + Put Calendar 7745</a><br><span class='sub'>Adjustments: 1</span><br><span class='sub'>SPX &middot; expires 10/16/2026</span></td><td>$50.00 DEBIT<br><span class='sub'>commissions $19.00</span></td><td><span class='pos'>Final P/L $171.00</span></td></tr><tr><td><span class='status-closed'>Closed</span></td><td class='sub'>Entry: 09/25/2026<br><span class='sub'>Exit: 10/02/2026</span></td><td><a href='campaign-2026-W39-SPX.html'>Put Broken Wing Oct9&#x27;26 | +2 $7700 | -4 $7660 | +2 $7610</a><br><span class='sub'>SPX &middot; expires 10/09/2026</span></td><td>$180.00 DEBIT<br><span class='sub'>commissions $17.24</span></td><td><span class='pos'>Final P/L $162.76</span></td></tr><tr><td><span class='status-closed'>Closed</span></td><td class='sub'>Entry: 09/18/2026<br><span class='sub'>Exit: 09/24/2026</span></td><td><a href='campaign-2026-W38-SPX.html'>Put Broken Wing Oct2&#x27;26 | +2 $7630 | -4 $7590 | +2 $7540 + Put Calendar 7645</a><br><span class='sub'>Adjustments: 1</span><br><span class='sub'>SPX &middot; expires 10/02/2026</span></td><td>$1,725.00 DEBIT<br><span class='sub'>commissions $12.80</span></td><td><span class='pos'>Final P/L $162.20</span></td></tr></tbody></table></div><p class='sub' style='margin-top:28px'>A snapshot, not a live view: published Oct 10, 07:25 PM ET and refreshed each trading day at 11:00, 16:05, 16:15 ET. A recommendation is never counted as a position until its fill is confirmed.</p></div>
+</body>
+</html>
