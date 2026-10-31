@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Campaigns</title>
+<style>
+:root{
+  --paper:#f3f2ed; --card:#faf9f6; --ink:#23262a; --muted:#71757c;
+  --line:#e2e0d9; --pos:#1d7a4d; --neg:#b3261e; --accent:#2f5d8a;
+  --chip:#eceae3;
+}
+:root:not([data-theme="light"]){ }
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#16181b; --card:#1d2024; --ink:#e8e6e1; --muted:#9aa0a8;
+    --line:#2c3037; --pos:#4ac98a; --neg:#f2635a; --accent:#7fb0e0; --chip:#262a30;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#16181b; --card:#1d2024; --ink:#e8e6e1; --muted:#9aa0a8;
+  --line:#2c3037; --pos:#4ac98a; --neg:#f2635a; --accent:#7fb0e0; --chip:#262a30;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:14px/1.5 ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent)}
+.topbar{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap;
+  padding:14px 16px;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}
+.topbar .spx{color:var(--ink);font-weight:600}
+.topbar .source{font-style:italic}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:15px;font-weight:600;color:var(--muted);letter-spacing:.02em;margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;
+  padding:20px;margin-bottom:18px}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.05em;
+  color:var(--muted);font-weight:600;padding:0 10px 8px 0;border-bottom:1px solid var(--line)}
+td{padding:11px 10px 11px 0;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+.sub{color:var(--muted);font-size:12px}
+.pos{color:var(--pos)} .neg{color:var(--neg)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:18px 0}
+.stat .k{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.stat .v{font-size:17px;margin-top:3px}
+.chip{display:inline-block;padding:2px 8px;border-radius:999px;background:var(--chip);
+  font-size:11px;color:var(--muted)}
+.status-open{color:var(--pos);font-weight:600}
+.status-planned{color:var(--accent);font-weight:600}
+.status-closed{color:var(--muted)}
+.chip.risk{background:var(--neg);color:#fff;font-weight:600}
+.ticket{background:var(--chip);border:1px dashed var(--line);border-radius:8px;
+  padding:12px 14px;margin:12px 0;font-family:ui-monospace,Menlo,Consolas,monospace;
+  font-size:12.5px;white-space:pre-wrap;word-break:break-word}
+.action-title{font-size:17px;margin:4px 0 6px}
+.right{text-align:right}
+.legs td:first-child{width:52px;color:var(--muted);font-size:12px}
+svg{display:block;width:100%;height:auto}
+@media (max-width:760px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .wrap{padding:16px}
+  table{font-size:13px}
+}
+</style>
+</head>
+<body>
+<div class="topbar"><span>Options Strategist</span><span>Eastern Time Oct 30 &middot; 09:38:28 PM</span></div>
+<div class="wrap"><h1>A14 weekly SPX campaign</h1><div class='card'><div class='sub'>SPX CAMPAIGNS</div><div class='action-title'><a href='a14/'>Open 1 &middot; closed 5 &middot; 100% won</a></div><div class='sub'>As of Oct 30, 09:38 PM ET</div><div class='stats'><div class='stat'><div class='k'>Realized P/L</div><div class='v pos'>+$683.96</div></div><div class='stat'><div class='k'>Open P/L</div><div class='v neg'>-$19.00</div></div><div class='stat'><div class='k'>Next action</div><div class='v '><span class='neg'>Action required</span></div></div></div></div><h1>SPX 0DTE Iron Fly Ladder</h1><div class='card'><div class='sub'>SPX 0DTE IRON FLIES &middot; PAPER FILLS AT MID</div><div class='action-title'><a href='ladder/'>7 days traded &middot; 7 won</a></div><div class='stats'><div class='stat'><div class='k'>Since inception</div><div class='v '><span class='pos'>+$28,716</span></div></div><div class='stat'><div class='k'>YTD</div><div class='v '><span class='pos'>+$28,716</span></div></div><div class='stat'><div class='k'>Last day (29 Oct)</div><div class='v '><span class='pos'>+$3,207</span></div></div><div class='stat'><div class='k'>Max drawdown</div><div class='v '><span class='pos'>$0</span></div></div><div class='stat'><div class='k'>PT/SL since inception</div><div class='v '><span class='pos'>+$15,036</span></div></div></div></div><h1>BWB Alert Tracker</h1><div class='card'><div class='sub'>CALL &amp; PUT BWB ALERTS</div><div class='action-title'><a href='bwb/'>Open 27 &middot; closed 62 &middot; 100% won</a></div><div class='stats'><div class='stat'><div class='k'>Realized P/L</div><div class='v pos'>+$10,023.50</div></div><div class='stat'><div class='k'>Open P/L (last check)</div><div class='v neg'>-$16,322.50</div></div><div class='stat'><div class='k'>Max buying power</div><div class='v '>$200,876.50</div></div><div class='stat'><div class='k'>Max drawdown (realized)</div><div class='v '>$0.00</div></div></div></div><h1>SKY 1DTE</h1><div class='card'><div class='sub'>SPX 1DTE IRON CONDORS &middot; PAPER</div><div class='action-title'><a href='sky/'>Open 1 &middot; closed 8 &middot; 75% won</a></div><div class='stats'><div class='stat'><div class='k'>Realized P/L</div><div class='v '><span class='pos'>+$4,190.00</span></div></div><div class='stat'><div class='k'>Open P/L (last mark)</div><div class='v '><span class='neg'>-$35.00</span></div></div><div class='stat'><div class='k'>Max drawdown (realized)</div><div class='v neg'>-$2,405.00</div></div></div></div><h1>Lottery</h1><div class='card'><div class='sub'>X TRADE ALERTS</div><div class='action-title'><a href='lottery/'>Opened 31 &middot; closed 29 week of 10/26&ndash;10/30 &middot; 4 open now</a></div><div class='stats'><div class='stat' data-stat='open'><div class='k'>Open trades (from 10/19)</div><div class='v '>$13,540.00 (4 trades)</div></div><div class='stat' data-stat='winrate-full'><div class='k'>Win rate (from 10/19)</div><div class='v '>42% (20 of 48)</div></div><div class='stat' data-stat='realized'><div class='k'>Total realized P&amp;L (from 10/19)</div><div class='v pos'>+$29,471.40</div></div><div class='stat' data-stat='dd-c'><div class='k'>Max drawdown (from 10/19)</div><div class='v neg'>-$45,962.10</div></div></div><div class='sub' data-stat='note' style='display:none'></div><script type='application/json' class='lottery-data'>{"rows":[{"i":512,"a":"SELL","pos":1400.0,"e":7.0,"x":7.2,"p":"c","k":"s","t":1792426981000},{"i":513,"a":"SELL","pos":1320.0,"e":2.2,"x":0.4,"p":"c","k":"s","t":1792429201000},{"i":519,"a":"BUY","pos":4970.0,"e":0.7,"x":0.07,"p":"c","k":"a","t":1792785600000,"b":4970.0,"st":false},{"i":520,"a":"BUY","pos":1260.0,"e":6.3,"x":0.63,"p":"c","k":"a","t":1792785600000,"b":1260.0,"st":false},{"i":522,"a":"BUY","pos":4730.0,"e":4.3,"x":0.43,"p":"c","k":"a","t":1792785600000,"b":4730.0,"st":false},{"i":523,"a":"SELL","pos":1300.0,"e":2.0,"x":3.9,"p":"c","k":"s","t":1792510360000},{"i":524,"a":"BUY","pos":1410.0,"e":2.35,"x":0.235,"p":"c","k":"a","t":1792785600000,"b":705.0,"st":false},{"i":525,"a":"SELL","pos":1440.0,"e":1.8,"x":2.1,"p":"c","k":"s","t":1792521869000},{"i":530,"a":"BUY","pos":1500.0,"e":3.0,"x":0.3,"p":"c","k":"a","t":1792785600000,"b":1500.0,"st":false},{"i":532,"a":"SELL","pos":705.0,"e":2.35,"x":4.5,"p":"c","k":"s","t":1792611437000},{"i":535,"a":"SELL","pos":4950.0,"e":5.5,"x":16.2,"p":"c","k":"s","t":1792681144000},{"i":536,"a":"BUY","pos":4680.0,"e":5.2,"x":0.52,"p":"c","k":"a","t":1792785600000,"b":4680.0,"st":false},{"i":540,"a":"SELL","pos":1260.0,"e":4.2,"x":10.0,"p":"c","k":"s","t":1792688840000},{"i":541,"a":"SELL","pos":4700.0,"e":4.7,"x":15.2,"p":"c","k":"s","t":1792692232000},{"i":542,"a":"SELL","pos":4970.0,"e":0.71,"x":0.75,"p":"c","k":"s","t":1792697440000},{"i":543,"a":"SELL","pos":4980.0,"e":0.6,"x":1.03,"p":"c","k":"s","t":1792698165000},{"i":548,"a":"BUY","pos":1500.0,"e":5.0,"x":0.5,"p":"c","k":"a","t":1792785600000,"b":1500.0,"st":false},{"i":549,"a":"BUY","pos":1430.0,"e":1.1,"x":0.11,"p":"c","k":"a","t":1792785600000,"b":1430.0,"st":false},{"i":553,"a":"BUY","pos":4800.0,"e":6.0,"x":0.6,"p":"c","k":"a","t":1793390400000,"b":4800.0,"st":false},{"i":554,"a":"BUY","pos":1400.0,"e":7.0,"x":0.7,"p":"c","k":"a","t":1793390400000,"b":1400.0,"st":false},{"i":557,"a":"BUY","pos":1554.0,"e":5.18,"x":0.518,"p":"c","k":"a","t":1793390400000,"b":1554.0,"st":false},{"i":558,"a":"BUY","pos":4940.0,"e":2.6,"x":0.26,"p":"c","k":"a","t":1793390400000,"b":4940.0,"st":false},{"i":560,"a":"BUY","pos":4740.0,"e":7.9,"x":0.79,"p":"c","k":"a","t":1793390400000,"b":4740.0,"st":false},{"i":561,"a":"BUY","pos":1440.0,"e":0.9,"x":0.09,"p":"c","k":"a","t":1793390400000,"b":1440.0,"st":false},{"i":562,"a":"SELL","pos":4840.0,"e":2.2,"x":8.95,"p":"c","k":"s","t":1793118225000},{"i":564,"a":"BUY","pos":1640.0,"e":8.2,"x":0.82,"p":"c","k":"a","t":1793390400000,"b":1640.0,"st":false},{"i":566,"a":"SELL","pos":4680.0,"e":5.2,"x":8.5,"p":"c","k":"s","t":1793194617000},{"i":568,"a":"BUY","pos":1500.0,"e":1.0,"x":0.1,"p":"c","k":"a","t":1793390400000,"b":1500.0,"st":false},{"i":569,"a":"SELL","pos":1500.0,"e":2.5,"x":4.05,"p":"c","k":"s","t":1793207646000},{"i":575,"a":"BUY","pos":4960.0,"e":1.6,"x":0.16,"p":"c","k":"a","t":1793390400000,"b":4960.0,"st":false},{"i":591,"a":"SELL","pos":1485.0,"e":4.95,"x":53.0,"p":"c","k":"s","t":1793281234000},{"i":592,"a":"BUY","pos":2000.0,"e":10.0,"x":1.0,"p":"c","k":"a","t":1793390400000,"b":2000.0,"st":false},{"i":593,"a":"SELL","pos":1360.0,"e":3.4,"x":10.0,"p":"c","k":"s","t":1793281729000},{"i":594,"a":"BUY","pos":1500.0,"e":5.0,"x":0.5,"p":"c","k":"a","t":1793390400000,"b":1500.0,"st":false},{"i":595,"a":"BUY","pos":4800.0,"e":3.2,"x":0.32,"p":"c","k":"a","t":1793390400000,"b":4800.0,"st":false},{"i":596,"a":"SELL","pos":1464.0,"e":2.44,"x":9.5,"p":"c","k":"s","t":1793289892000},{"i":597,"a":"BUY","pos":1380.0,"e":2.3,"x":0.23,"p":"c","k":"a","t":1793390400000,"b":1380.0,"st":false},{"i":598,"a":"BUY","pos":5000.0,"e":2.0,"x":0.2,"p":"c","k":"a","t":1793390400000,"b":5000.0,"st":false},{"i":599,"a":"BUY","pos":5000.0,"e":2.0,"x":0.2,"p":"c","k":"a","t":1793390400000,"b":5000.0,"st":false},{"i":603,"a":"BUY","pos":1485.0,"e":1.35,"x":0.135,"p":"c","k":"a","t":1793390400000,"b":1485.0,"st":false},{"i":604,"a":"SELL","pos":4960.0,"e":1.6,"x":4.0,"p":"c","k":"s","t":1793379068000},{"i":606,"a":"BUY","pos":1500.0,"e":0.1,"x":0.01,"p":"c","k":"a","t":1793390400000,"b":1500.0,"st":false},{"i":607,"a":"SELL","pos":1500.0,"e":1.5,"x":4.1,"p":"c","k":"s","t":1793380387000},{"i":608,"a":"BUY","pos":1430.0,"e":1.3,"x":0.13,"p":"c","k":"a","t":1793390400000,"b":1430.0,"st":false},{"i":610,"a":"SELL","pos":1482.0,"e":0.57,"x":1.5,"p":"c","k":"s","t":1793383730000},{"i":611,"a":"SELL","pos":5000.0,"e":5.0,"x":15.4,"p":"c","k":"s","t":1793384507000},{"i":612,"a":"SELL","pos":1480.0,"e":0.37,"x":1.8,"p":"c","k":"s","t":1793385564000},{"i":624,"a":"BUY","pos":1430.0,"e":1.3,"x":0.13,"p":"c","k":"a","t":1792785600000,"b":1430.0,"st":false}],"loss":{"opt":90.0,"stock":25.0},"open":[4,13540.0]}</script><script>(() => {
+  const root = document.currentScript.parentElement;
+  const data = JSON.parse(root.querySelector('script.lottery-data').textContent);
+  const KEY = 'lottery-assumptions';
+  const defaults = {buy: 0, sell: 0, opt: data.loss.opt, stock: data.loss.stock};
+  const limits = {buy: [-99.99, 1e6], sell: [-100, 1e6], opt: [0, 100], stock: [0, 100]};
+  const clean = v => {
+    const out = {};
+    for (const k in defaults) {
+      const n = Number(v && v[k]);
+      out[k] = v && v[k] !== '' && v[k] != null && Number.isFinite(n) && n >= limits[k][0] && n <= limits[k][1] ? n : defaults[k];
+    }
+    return out;
+  };
+  const load = () => { try { return clean(JSON.parse(localStorage.getItem(KEY) || '{}')); } catch (e) { return clean({}); } };
+  const store = v => { try { localStorage.setItem(KEY, JSON.stringify(v)); } catch (e) {} };
+  const forget = () => { try { localStorage.removeItem(KEY); } catch (e) {} };
+  // Cents, rounded like Python's round(): the exact value to the nearest cent, and an exact half-cent
+  // (only possible at .125, .375, .625, .875) to the even cent.
+  const r2 = x => {
+    const a = Math.abs(x);
+    if (Number.isInteger(a * 8) && !Number.isInteger(a * 100)) {
+      const c = Math.floor(a * 100);
+      return Math.sign(x) * (c % 2 === 0 ? c : c + 1) / 100;
+    }
+    return Math.sign(x) * Number(a.toFixed(2));
+  };
+  const usd = (v, signed) => {
+    if (v == null) return '\u2014';
+    const t = '$' + Math.abs(v).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    return v < 0 ? '-' + t : (signed ? '+' : '') + t;
+  };
+  const cls = v => v == null || v === 0 ? '' : v > 0 ? 'pos' : 'neg';
+  const num = v => v == null ? '' : String(Number(v.toPrecision(6)));
+  const size = v => v ? '$' + Math.round(v).toLocaleString('en-US') : '';
+  const pct = v => (v < 0 ? '-' : '+') + Math.abs(v).toFixed(2) + '%';
+  const fmtPct = v => String(Math.round(v * 100) / 100);
+  const set = (key, text, c) => {
+    for (const tile of root.querySelectorAll(`[data-stat="${key}"]`)) {
+      const el = tile.classList.contains('stat') ? tile.querySelector('.v') : tile;
+      el.textContent = text;
+      if (c !== undefined) el.className = 'v ' + c;
+    }
+  };
+  const drawdown = rows => {
+    const ev = rows.map(r => [r.t, r.pnl]).sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+    let total = 0, peak = 0, drop = 0;
+    for (const [, p] of ev) { total += p; if (total > peak) peak = total; if (peak - total > drop) drop = peak - total; }
+    return ev.length ? drop : null;
+  };
+  const apply = a => {
+    const fb = 1 + a.buy / 100, fs = 1 + a.sell / 100;
+    const rows = data.rows.map(r => {
+      const out = {...r, pos: r.pos == null ? null : r.pos * fb, e: r.e == null ? null : r.e * fb,
+                   x: r.x == null ? null : r.x * fs, pnl: null, pp: null};
+      if (r.k === 's') {
+        out.pnl = r2(r.pos * (r.x * fs / r.e - fb));
+        out.pp = (r.x * fs / (r.e * fb) - 1) * 100;
+      } else if (r.k === 'a') {
+        const loss = (r.st ? a.stock : a.opt) / 100;
+        out.x = r.e == null ? null : r.e * fb * (1 - loss);
+        out.pnl = r2(-r.b * fb * loss);
+        out.pp = -loss * 100;
+      }
+      return out;
+    });
+    const byId = new Map(rows.map(r => [String(r.i), r]));
+    for (const tr of root.querySelectorAll('tr[data-id]')) {
+      const r = byId.get(tr.dataset.id);
+      if (!r) continue;
+      const cell = f => tr.querySelector(`[data-f="${f}"]`);
+      cell('size').textContent = size(r.pos);
+      cell('entry').textContent = num(r.e);
+      cell('exit').textContent = num(r.x);
+      if (r.k) {
+        cell('pct').textContent = pct(r.pp);
+        cell('pct').className = 'right ' + cls(r.pp);
+        cell('usd').textContent = usd(r.pnl, true);
+        cell('usd').className = 'right ' + cls(r.pnl);
+      }
+    }
+    const done = rows.filter(r => r.k);
+    const cur = done.filter(r => r.p === 'c'), prev = done.filter(r => r.p === 'p');
+    const sum = rs => rs.reduce((s, r) => s + r.pnl, 0);
+    const realized = r2(sum(cur)), wins = cur.filter(r => r.pnl > 0).length;
+    set('realized', usd(realized, true), cls(realized));
+    const rate = cur.length ? Math.round(wins / cur.length * 100) + '%' : '\u2014';
+    set('winrate', rate);
+    set('winrate-full', cur.length ? `${rate} (${wins} of ${cur.length})` : '\u2014');
+    const ddText = dd => dd == null ? '\u2014' : usd(-dd);
+    const ddc = drawdown(cur), ddp = drawdown(prev);
+    set('dd-c', ddText(ddc), ddc ? 'neg' : '');
+    set('dd-p', ddText(ddp), ddp ? 'neg' : '');
+    if (data.cap) {
+      const prevSum = r2(sum(prev));
+      set('prev', usd(prevSum, true), cls(prevSum));
+      set('cap-c', data.cap.c == null ? '\u2014' : usd(data.cap.c * fb));
+      set('cap-p', data.cap.p == null ? '\u2014' : usd(data.cap.p * fb));
+    }
+    if (data.open) {
+      const [n, paid] = data.open;
+      set('open', `${usd(paid * fb)} (${n} trade${n === 1 ? '' : 's'})`);
+    }
+    set('opt-loss', fmtPct(a.opt) + '%');
+    set('stock-loss', fmtPct(a.stock) + '%');
+    const signed = v => (v > 0 ? '+' : v < 0 ? '\u2212' : '') + fmtPct(Math.abs(v)) + '%';
+    set('prices', a.buy || a.sell
+      ? `buying ${signed(a.buy)} and selling ${signed(a.sell)} against the alert prices`
+      : 'at the alert prices');
+    const custom = Object.keys(defaults).some(k => a[k] !== defaults[k]);
+    for (const el of root.querySelectorAll('[data-stat="note"]')) {
+      el.style.display = custom ? '' : 'none';
+      el.textContent = `Using this browser's settings: buys ${signed(a.buy)}, sells ${signed(a.sell)}, `
+        + `auto-close loss ${fmtPct(a.opt)}% (stock ${fmtPct(a.stock)}%).`;
+    }
+  };
+  const bar = root.querySelector('.lottery-assumptions');
+  const fill = a => { if (bar) for (const k in a) bar.querySelector(`[name=${k}]`).value = a[k]; };
+  if (bar) {
+    bar.style.display = 'flex';
+    bar.addEventListener('input', () => {
+      const raw = {};
+      for (const k in defaults) raw[k] = bar.querySelector(`[name=${k}]`).value;
+      const a = clean(raw);
+      for (const k in defaults) bar.querySelector(`[name=${k}]`).style.outline = a[k] === Number(raw[k]) && raw[k] !== '' ? '' : '1px solid #c33';
+      store(a);
+      apply(a);
+    });
+    bar.querySelector('button').addEventListener('click', () => {
+      forget();
+      for (const k in defaults) bar.querySelector(`[name=${k}]`).style.outline = '';
+      fill(defaults);
+      apply(defaults);
+    });
+  }
+  window.addEventListener('storage', e => { if (e.key === KEY) { const a = load(); fill(a); apply(a); } });
+  const a = load();
+  fill(a);
+  if (Object.keys(defaults).some(k => a[k] !== defaults[k])) apply(a);
+})();</script></div><p class='sub' style='margin-top:28px'>A snapshot, not a live view: published Oct 30, 09:38 PM ET and refreshed each trading day at 11:00, 16:05, 16:15 ET. A recommendation is never counted as a position until its fill is confirmed.</p></div>
+</body>
+</html>
