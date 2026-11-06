@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Campaigns</title>
+<style>
+:root{
+  --paper:#f3f2ed; --card:#faf9f6; --ink:#23262a; --muted:#71757c;
+  --line:#e2e0d9; --pos:#1d7a4d; --neg:#b3261e; --accent:#2f5d8a;
+  --chip:#eceae3; --hl-near:#fff1a8; --hl-at:#f7a65f;
+}
+:root:not([data-theme="light"]){ }
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#16181b; --card:#1d2024; --ink:#e8e6e1; --muted:#9aa0a8;
+    --line:#2c3037; --pos:#4ac98a; --neg:#f2635a; --accent:#7fb0e0; --chip:#262a30;
+    --hl-near:#4a4214; --hl-at:#7a3a10;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#16181b; --card:#1d2024; --ink:#e8e6e1; --muted:#9aa0a8;
+  --line:#2c3037; --pos:#4ac98a; --neg:#f2635a; --accent:#7fb0e0; --chip:#262a30;
+    --hl-near:#4a4214; --hl-at:#7a3a10;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:14px/1.5 ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent)}
+.topbar{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap;
+  padding:14px 16px;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}
+.topbar .spx{color:var(--ink);font-weight:600}
+.topbar .source{font-style:italic}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:15px;font-weight:600;color:var(--muted);letter-spacing:.02em;margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;
+  padding:20px;margin-bottom:18px}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.05em;
+  color:var(--muted);font-weight:600;padding:0 10px 8px 0;border-bottom:1px solid var(--line)}
+td{padding:11px 10px 11px 0;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+.sub{color:var(--muted);font-size:12px}
+.pos{color:var(--pos)} .neg{color:var(--neg)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:18px 0}
+.stat .k{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.stat .v{font-size:17px;margin-top:3px}
+.chip{display:inline-block;padding:2px 8px;border-radius:999px;background:var(--chip);
+  font-size:11px;color:var(--muted)}
+.status-open{color:var(--pos);font-weight:600}
+.status-planned{color:var(--accent);font-weight:600}
+.status-closed{color:var(--muted)}
+.chip.risk{background:var(--neg);color:#fff;font-weight:600}
+.chip.earn{background:#c2410c;color:#fff;font-weight:600}
+tr.hl-near td{background:var(--hl-near)}
+tr.hl-at td{background:var(--hl-at)}
+.swatch{display:inline-block;width:10px;height:10px;border-radius:2px;vertical-align:-1px;
+  border:1px solid var(--line)}
+.ticket{background:var(--chip);border:1px dashed var(--line);border-radius:8px;
+  padding:12px 14px;margin:12px 0;font-family:ui-monospace,Menlo,Consolas,monospace;
+  font-size:12.5px;white-space:pre-wrap;word-break:break-word}
+.action-title{font-size:17px;margin:4px 0 6px}
+.right{text-align:right}
+.legs td:first-child{width:52px;color:var(--muted);font-size:12px}
+svg{display:block;width:100%;height:auto}
+@media (max-width:760px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .wrap{padding:16px}
+  table{font-size:13px}
+}
+</style>
+</head>
+<body>
+<div class="topbar"><span>Options Strategist</span><span>Eastern Time Nov 6 &middot; 04:15:05 PM</span></div>
+<div class="wrap"><h1>A14 weekly SPX campaign</h1><div class='card'><div class='sub'>SPX CAMPAIGNS</div><div class='action-title'><a href='a14/'>Open 1 &middot; closed 6 &middot; 100% won</a></div><div class='sub'>As of Nov 6, 04:15 PM ET</div><div class='stats'><div class='stat'><div class='k'>Realized P/L</div><div class='v pos'>+$797.96</div></div><div class='stat'><div class='k'>Open P/L</div><div class='v neg'>-$48.00</div></div><div class='stat'><div class='k'>Next action</div><div class='v '>None</div></div></div></div><h1>SPX 0DTE Iron Fly Ladder</h1><div class='card'><div class='sub'>SPX 0DTE IRON FLIES &middot; PAPER FILLS AT MID</div><div class='action-title'><a href='ladder/'>11 days traded &middot; 10 won</a></div><div class='stats'><div class='stat'><div class='k'>Since inception</div><div class='v '><span class='pos'>+$62,712</span></div></div><div class='stat'><div class='k'>YTD</div><div class='v '><span class='pos'>+$62,712</span></div></div><div class='stat'><div class='k'>Last day (6 Nov)</div><div class='v '><span class='pos'>+$23,586</span></div></div><div class='stat'><div class='k'>Max drawdown</div><div class='v '><span class='neg'>-$4,356</span></div></div><div class='stat'><div class='k'>PT/SL since inception</div><div class='v '><span class='pos'>+$39,830</span></div></div></div></div><h1>BWB Alert Tracker</h1><div class='card'><div class='sub'>CALL &amp; PUT BWB ALERTS</div><div class='action-title'><a href='bwb/'>Open 15 &middot; closed 51 &middot; 100% won</a></div><div class='stats'><div class='stat'><div class='k'>Realized P/L</div><div class='v pos'>+$14,330.00</div></div><div class='stat'><div class='k'>Open P/L (last check)</div><div class='v neg'>-$12,667.00</div></div><div class='stat'><div class='k'>Max buying power</div><div class='v '>$291,155.00</div></div><div class='stat'><div class='k'>Max drawdown (realized)</div><div class='v '>$0.00</div></div></div></div><h1>SKY 1DTE</h1><div class='card'><div class='sub'>SPX 1DTE IRON CONDORS &middot; PAPER</div><div class='action-title'><a href='sky/'>Open 1 &middot; closed 13 &middot; 62% won</a></div><div class='stats'><div class='stat'><div class='k'>Realized P/L</div><div class='v '><span class='pos'>+$2,290.00</span></div></div><div class='stat'><div class='k'>Open P/L (last mark)</div><div class='v '><span class='neg'>-$35.00</span></div></div><div class='stat'><div class='k'>Max drawdown (realized)</div><div class='v neg'>-$5,985.00</div></div></div></div><h1>Lottery</h1><div class='card'><div class='sub'>X TRADE ALERTS</div><div class='action-title'><a href='lottery/'>Opened 23 &middot; closed 25 week of 11/02&ndash;11/06 &middot; 2 open now</a></div><div class='stats'><div class='stat' data-stat='open'><div class='k'>Open trades (from 10/19)</div><div class='v '>$6,440.00 (2 trades)</div></div><div class='stat' data-stat='winrate-full'><div class='k'>Win rate (from 10/19)</div><div class='v '>38% (28 of 73)</div></div><div class='stat' data-stat='realized'><div class='k'>Total realized P&amp;L (from 10/19)</div><div class='v pos'>+$43,623.40</div></div><div class='stat' data-stat='dd-c'><div class='k'>Max drawdown (from 10/19)</div><div class='v neg'>-$45,962.10</div></div></div><div class='sub' data-stat='note' style='display:none'></div><script type='application/json' class='lottery-data'>{"rows":[{"i":512,"a":"SELL","pos":1400.0,"e":7.0,"x":7.2,"p":"c","k":"s","t":1792426981000},{"i":513,"a":"SELL","pos":1320.0,"e":2.2,"x":0.4,"p":"c","k":"s","t":1792429201000},{"i":519,"a":"BUY","pos":4970.0,"e":0.7,"x":0.07,"p":"c","k":"a","t":1792785600000,"b":4970.0,"st":false},{"i":520,"a":"BUY","pos":1260.0,"e":6.3,"x":0.63,"p":"c","k":"a","t":1792785600000,"b":1260.0,"st":false},{"i":522,"a":"BUY","pos":4730.0,"e":4.3,"x":0.43,"p":"c","k":"a","t":1792785600000,"b":4730.0,"st":false},{"i":523,"a":"SELL","pos":1300.0,"e":2.0,"x":3.9,"p":"c","k":"s","t":1792510360000},{"i":524,"a":"BUY","pos":1410.0,"e":2.35,"x":0.235,"p":"c","k":"a","t":1792785600000,"b":705.0,"st":false},{"i":525,"a":"SELL","pos":1440.0,"e":1.8,"x":2.1,"p":"c","k":"s","t":1792521869000},{"i":530,"a":"BUY","pos":1500.0,"e":3.0,"x":0.3,"p":"c","k":"a","t":1792785600000,"b":1500.0,"st":false},{"i":532,"a":"SELL","pos":705.0,"e":2.35,"x":4.5,"p":"c","k":"s","t":1792611437000},{"i":535,"a":"SELL","pos":4950.0,"e":5.5,"x":16.2,"p":"c","k":"s","t":1792681144000},{"i":536,"a":"BUY","pos":4680.0,"e":5.2,"x":0.52,"p":"c","k":"a","t":1792785600000,"b":4680.0,"st":false},{"i":540,"a":"SELL","pos":1260.0,"e":4.2,"x":10.0,"p":"c","k":"s","t":1792688840000},{"i":541,"a":"SELL","pos":4700.0,"e":4.7,"x":15.2,"p":"c","k":"s","t":1792692232000},{"i":542,"a":"SELL","pos":4970.0,"e":0.71,"x":0.75,"p":"c","k":"s","t":1792697440000},{"i":543,"a":"SELL","pos":4980.0,"e":0.6,"x":1.03,"p":"c","k":"s","t":1792698165000},{"i":548,"a":"BUY","pos":1500.0,"e":5.0,"x":0.5,"p":"c","k":"a","t":1792785600000,"b":1500.0,"st":false},{"i":549,"a":"BUY","pos":1430.0,"e":1.1,"x":0.11,"p":"c","k":"a","t":1792785600000,"b":1430.0,"st":false},{"i":553,"a":"BUY","pos":4800.0,"e":6.0,"x":0.6,"p":"c","k":"a","t":1793390400000,"b":4800.0,"st":false},{"i":554,"a":"BUY","pos":1400.0,"e":7.0,"x":0.7,"p":"c","k":"a","t":1793390400000,"b":1400.0,"st":false},{"i":557,"a":"BUY","pos":1554.0,"e":5.18,"x":0.518,"p":"c","k":"a","t":1793390400000,"b":1554.0,"st":false},{"i":558,"a":"BUY","pos":4940.0,"e":2.6,"x":0.26,"p":"c","k":"a","t":1793390400000,"b":4940.0,"st":false},{"i":560,"a":"BUY","pos":4740.0,"e":7.9,"x":0.79,"p":"c","k":"a","t":1793390400000,"b":4740.0,"st":false},{"i":561,"a":"BUY","pos":1440.0,"e":0.9,"x":0.09,"p":"c","k":"a","t":1793390400000,"b":1440.0,"st":false},{"i":562,"a":"SELL","pos":4840.0,"e":2.2,"x":8.95,"p":"c","k":"s","t":1793118225000},{"i":563,"a":"BUY","pos":1920.0,"e":9.6,"x":0.96,"p":"c","k":"a","t":1793998800000,"b":1920.0,"st":false},{"i":564,"a":"BUY","pos":1640.0,"e":8.2,"x":0.82,"p":"c","k":"a","t":1793390400000,"b":1640.0,"st":false},{"i":566,"a":"SELL","pos":4680.0,"e":5.2,"x":8.5,"p":"c","k":"s","t":1793194617000},{"i":568,"a":"BUY","pos":1500.0,"e":1.0,"x":0.1,"p":"c","k":"a","t":1793390400000,"b":1500.0,"st":false},{"i":569,"a":"SELL","pos":1500.0,"e":2.5,"x":4.05,"p":"c","k":"s","t":1793207646000},{"i":574,"a":"BUY","pos":4620.0,"e":6.6,"x":0.66,"p":"c","k":"a","t":1793998800000,"b":4620.0,"st":false},{"i":575,"a":"BUY","pos":4960.0,"e":1.6,"x":0.16,"p":"c","k":"a","t":1793390400000,"b":4960.0,"st":false},{"i":591,"a":"SELL","pos":1485.0,"e":4.95,"x":53.0,"p":"c","k":"s","t":1793281234000},{"i":592,"a":"BUY","pos":2000.0,"e":10.0,"x":1.0,"p":"c","k":"a","t":1793390400000,"b":2000.0,"st":false},{"i":593,"a":"SELL","pos":1360.0,"e":3.4,"x":10.0,"p":"c","k":"s","t":1793281729000},{"i":594,"a":"BUY","pos":1500.0,"e":5.0,"x":0.5,"p":"c","k":"a","t":1793390400000,"b":1500.0,"st":false},{"i":595,"a":"BUY","pos":4800.0,"e":3.2,"x":0.32,"p":"c","k":"a","t":1793390400000,"b":4800.0,"st":false},{"i":596,"a":"SELL","pos":1464.0,"e":2.44,"x":9.5,"p":"c","k":"s","t":1793289892000},{"i":597,"a":"BUY","pos":1380.0,"e":2.3,"x":0.23,"p":"c","k":"a","t":1793390400000,"b":1380.0,"st":false},{"i":598,"a":"BUY","pos":5000.0,"e":2.0,"x":0.2,"p":"c","k":"a","t":1793390400000,"b":5000.0,"st":false},{"i":599,"a":"BUY","pos":5000.0,"e":2.0,"x":0.2,"p":"c","k":"a","t":1793390400000,"b":5000.0,"st":false},{"i":603,"a":"BUY","pos":1485.0,"e":1.35,"x":0.135,"p":"c","k":"a","t":1793390400000,"b":1485.0,"st":false},{"i":604,"a":"SELL","pos":4960.0,"e":1.6,"x":4.0,"p":"c","k":"s","t":1793379068000},{"i":606,"a":"BUY","pos":1500.0,"e":0.1,"x":0.01,"p":"c","k":"a","t":1793390400000,"b":1500.0,"st":false},{"i":607,"a":"SELL","pos":1500.0,"e":1.5,"x":4.1,"p":"c","k":"s","t":1793380387000},{"i":608,"a":"BUY","pos":1430.0,"e":1.3,"x":0.13,"p":"c","k":"a","t":1793390400000,"b":1430.0,"st":false},{"i":610,"a":"SELL","pos":1482.0,"e":0.57,"x":1.5,"p":"c","k":"s","t":1793383730000},{"i":611,"a":"SELL","pos":5000.0,"e":5.0,"x":15.4,"p":"c","k":"s","t":1793384507000},{"i":612,"a":"SELL","pos":1480.0,"e":0.37,"x":1.8,"p":"c","k":"s","t":1793385564000},{"i":613,"a":"BUY","pos":2000.0,"e":10.0,"x":1.0,"p":"c","k":"a","t":1793998800000,"b":2000.0,"st":false},{"i":625,"a":"BUY","pos":1500.0,"e":3.0,"x":0.3,"p":"c","k":"a","t":1793998800000,"b":1500.0,"st":false},{"i":628,"a":"SELL","pos":1530.0,"e":5.1,"x":8.0,"p":"c","k":"s","t":1793636665000},{"i":630,"a":"SELL","pos":1485.0,"e":1.35,"x":13.4,"p":"c","k":"s","t":1793647338000},{"i":632,"a":"SELL","pos":4950.0,"e":1.5,"x":4.0,"p":"c","k":"s","t":1793651489000},{"i":633,"a":"SELL","pos":4800.0,"e":4.0,"x":5.5,"p":"c","k":"s","t":1793651673000},{"i":644,"a":"BUY","pos":1430.0,"e":1.3,"x":0.13,"p":"c","k":"a","t":1792785600000,"b":1430.0,"st":false},{"i":646,"a":"BUY","pos":1480.0,"e":3.7,"x":0.37,"p":"c","k":"a","t":1793998800000,"b":1480.0,"st":false},{"i":647,"a":"BUY","pos":1500.0,"e":1.25,"x":0.125,"p":"c","k":"a","t":1793998800000,"b":1500.0,"st":false},{"i":649,"a":"SELL","pos":5000.0,"e":2.0,"x":3.5,"p":"c","k":"s","t":1793804656000},{"i":650,"a":"BUY","pos":4950.0,"e":1.1,"x":0.11,"p":"c","k":"a","t":1793998800000,"b":4950.0,"st":false},{"i":651,"a":"BUY","pos":4960.0,"e":24.8,"x":2.48,"p":"c","k":"a","t":1793998800000,"b":4960.0,"st":false},{"i":653,"a":"BUY","pos":1290.0,"e":4.3,"x":0.43,"p":"c","k":"a","t":1793998800000,"b":1290.0,"st":false},{"i":654,"a":"BUY","pos":4945.0,"e":2.15,"x":0.215,"p":"c","k":"a","t":1793998800000,"b":4945.0,"st":false},{"i":656,"a":"SELL","pos":5000.0,"e":2.0,"x":8.0,"p":"c","k":"s","t":1793889520000},{"i":657,"a":"SELL","pos":1320.0,"e":3.3,"x":30.0,"p":"c","k":"s","t":1793889568000},{"i":659,"a":"BUY","pos":1495.0,"e":1.15,"x":0.115,"p":"c","k":"a","t":1793998800000,"b":1495.0,"st":false},{"i":660,"a":"BUY","pos":4800.0,"e":3.0,"x":0.3,"p":"c","k":"a","t":1793998800000,"b":4800.0,"st":false},{"i":661,"a":"BUY","pos":4750.0,"e":4.75,"x":0.475,"p":"c","k":"a","t":1793998800000,"b":4750.0,"st":false},{"i":662,"a":"BUY","pos":1500.0,"e":5.0,"x":0.5,"p":"c","k":"a","t":1793998800000,"b":1500.0,"st":false},{"i":663,"a":"BUY","pos":4920.0,"e":1.2,"x":0.12,"p":"c","k":"a","t":1793998800000,"b":4920.0,"st":false},{"i":664,"a":"BUY","pos":1100.0,"e":5.5,"x":0.55,"p":"c","k":"a","t":1793998800000,"b":1100.0,"st":false},{"i":665,"a":"BUY","pos":1440.0,"e":1.2,"x":0.12,"p":"c","k":"a","t":1793998800000,"b":1440.0,"st":false},{"i":666,"a":"SELL","pos":4800.0,"e":6.0,"x":12.0,"p":"c","k":"s","t":1793989772000}],"loss":{"opt":90.0,"stock":25.0},"open":[2,6440.0]}</script><script>(() => {
+  const root = document.currentScript.parentElement;
+  const data = JSON.parse(root.querySelector('script.lottery-data').textContent);
+  const KEY = 'lottery-assumptions';
+  const defaults = {buy: 0, sell: 0, opt: data.loss.opt, stock: data.loss.stock};
+  const limits = {buy: [-99.99, 1e6], sell: [-100, 1e6], opt: [0, 100], stock: [0, 100]};
+  const clean = v => {
+    const out = {};
+    for (const k in defaults) {
+      const n = Number(v && v[k]);
+      out[k] = v && v[k] !== '' && v[k] != null && Number.isFinite(n) && n >= limits[k][0] && n <= limits[k][1] ? n : defaults[k];
+    }
+    return out;
+  };
+  const load = () => { try { return clean(JSON.parse(localStorage.getItem(KEY) || '{}')); } catch (e) { return clean({}); } };
+  const store = v => { try { localStorage.setItem(KEY, JSON.stringify(v)); } catch (e) {} };
+  const forget = () => { try { localStorage.removeItem(KEY); } catch (e) {} };
+  // Cents, rounded like Python's round(): the exact value to the nearest cent, and an exact half-cent
+  // (only possible at .125, .375, .625, .875) to the even cent.
+  const r2 = x => {
+    const a = Math.abs(x);
+    if (Number.isInteger(a * 8) && !Number.isInteger(a * 100)) {
+      const c = Math.floor(a * 100);
+      return Math.sign(x) * (c % 2 === 0 ? c : c + 1) / 100;
+    }
+    return Math.sign(x) * Number(a.toFixed(2));
+  };
+  const usd = (v, signed) => {
+    if (v == null) return '\u2014';
+    const t = '$' + Math.abs(v).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    return v < 0 ? '-' + t : (signed ? '+' : '') + t;
+  };
+  const cls = v => v == null || v === 0 ? '' : v > 0 ? 'pos' : 'neg';
+  const num = v => v == null ? '' : String(Number(v.toPrecision(6)));
+  const size = v => v ? '$' + Math.round(v).toLocaleString('en-US') : '';
+  const pct = v => (v < 0 ? '-' : '+') + Math.abs(v).toFixed(2) + '%';
+  const fmtPct = v => String(Math.round(v * 100) / 100);
+  const set = (key, text, c) => {
+    for (const tile of root.querySelectorAll(`[data-stat="${key}"]`)) {
+      const el = tile.classList.contains('stat') ? tile.querySelector('.v') : tile;
+      el.textContent = text;
+      if (c !== undefined) el.className = 'v ' + c;
+    }
+  };
+  const drawdown = rows => {
+    const ev = rows.map(r => [r.t, r.pnl]).sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+    let total = 0, peak = 0, drop = 0;
+    for (const [, p] of ev) { total += p; if (total > peak) peak = total; if (peak - total > drop) drop = peak - total; }
+    return ev.length ? drop : null;
+  };
+  const recalc = a => {
+    const fb = 1 + a.buy / 100, fs = 1 + a.sell / 100;
+    return data.rows.map(r => {
+      const out = {...r, pos: r.pos == null ? null : r.pos * fb, e: r.e == null ? null : r.e * fb,
+                   x: r.x == null ? null : r.x * fs, pnl: null, pp: null};
+      if (r.k === 's') {
+        out.pnl = r2(r.pos * (r.x * fs / r.e - fb));
+        out.pp = (r.x * fs / (r.e * fb) - 1) * 100;
+      } else if (r.k === 'a') {
+        const loss = (r.st ? a.stock : a.opt) / 100;
+        out.x = r.e == null ? null : r.e * fb * (1 - loss);
+        out.pnl = r2(-r.b * fb * loss);
+        out.pp = -loss * 100;
+      }
+      return out;
+    });
+  };
+  // Weekly P/L: one column per week of data.weeks, up from zero for a gain, down for a loss.
+  const chart = root.querySelector('.lottery-weekly');
+  const SVG = 'http://www.w3.org/2000/svg';
+  const short = (v, signed) => {
+    const a = Math.abs(v), t = a >= 1000 ? '$' + Number((a / 1000).toFixed(a >= 100000 ? 0 : 1)) + 'k' : '$' + Math.round(a);
+    return (v < 0 ? '-' : signed && v > 0 ? '+' : '') + t;
+  };
+  let weekRows = null;
+  const drawWeeks = rows => {
+    if (!chart || !data.weeks || !data.weeks.length) return;
+    weekRows = rows;
+    const weeks = data.weeks.map(w => ({...w, pnl: 0, n: 0})), at = new Map(weeks.map(w => [w.w, w]));
+    for (const r of rows) { const w = r.k && at.get(r.w); if (w) { w.pnl += r.pnl; w.n += 1; } }
+    for (const w of weeks) {
+      w.pnl = r2(w.pnl);
+      const cell = root.querySelector(`[data-week-pnl="${w.w}"]`);
+      if (cell) { cell.textContent = usd(w.pnl, true); cell.className = 'right ' + cls(w.pnl); }
+    }
+    const W = Math.max(280, chart.clientWidth), H = 220, L = 52, R = 6, T = 18, B = 26;
+    const lo = Math.min(0, ...weeks.map(w => w.pnl)), hi = Math.max(0, ...weeks.map(w => w.pnl));
+    const raw = (hi - lo) / 4 || 250, mag = Math.pow(10, Math.floor(Math.log10(raw)));
+    const step = [1, 2, 2.5, 5, 10].map(m => m * mag).find(s => s >= raw);
+    const y0 = Math.floor(lo / step) * step, y1 = Math.max(Math.ceil(hi / step) * step, y0 + step);
+    const y = v => T + (y1 - v) / (y1 - y0) * (H - T - B);
+    const band = (W - L - R) / weeks.length, bw = Math.min(24, band * 0.6), labels = band >= 46;
+    const every = Math.ceil(30 / band);
+    const el = (name, attrs, text) => {
+      const e = document.createElementNS(SVG, name);
+      for (const k in attrs) e.setAttribute(k, attrs[k]);
+      if (text != null) e.textContent = text;
+      return e;
+    };
+    const svg = el('svg', {viewBox: `0 0 ${W} ${H}`, width: W, height: H, role: 'img',
+      'aria-label': 'Weekly P/L: ' + weeks.map(w => `${w.l} ${usd(w.pnl, true)}`).join(', ')});
+    svg.style.overflow = 'visible';
+    const text = (x, yy, s, anchor, color) => svg.appendChild(el('text', {x, y: yy, 'text-anchor': anchor,
+      'font-size': 11, style: `fill:var(${color});pointer-events:none`}, s));
+    for (let v = y0; v <= y1 + step / 2; v += step) {
+      svg.appendChild(el('line', {x1: L, x2: W - R, y1: y(v), y2: y(v),
+        style: `stroke:var(${Math.abs(v) < step / 2 ? '--muted' : '--line'})`, 'stroke-width': 1}));
+      text(L - 6, y(v) + 4, short(Math.abs(v) < step / 2 ? 0 : v), 'end', '--muted');
+    }
+    const tip = chart.querySelector('.tip') || chart.appendChild(Object.assign(document.createElement('div'), {className: 'tip'}));
+    tip.style.cssText = 'position:absolute;display:none;pointer-events:none;background:var(--card);border:1px solid var(--line);'
+      + 'border-radius:6px;padding:6px 8px;font-size:12px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.12)';
+    weeks.forEach((w, i) => {
+      const cx = L + band * (i + 0.5), x = cx - bw / 2, top = y(Math.max(w.pnl, 0)), bot = y(Math.min(w.pnl, 0));
+      const h = bot - top, rr = Math.min(4, h, bw / 2), base = y(0);
+      const hover = el('rect', {x: L + band * i, y: T, width: band, height: H - T - B, fill: 'transparent'});
+      svg.appendChild(hover);
+      if (h > 0.5) {
+        const d = w.pnl > 0
+          ? `M${x},${base}V${top + rr}Q${x},${top} ${x + rr},${top}H${x + bw - rr}Q${x + bw},${top} ${x + bw},${top + rr}V${base}Z`
+          : `M${x},${base}V${bot - rr}Q${x},${bot} ${x + rr},${bot}H${x + bw - rr}Q${x + bw},${bot} ${x + bw},${bot - rr}V${base}Z`;
+        svg.appendChild(el('path', {d, style: `fill:var(${w.pnl > 0 ? '--pos' : '--neg'});pointer-events:none`, 'data-week': w.w}));
+      }
+      if (labels) text(cx, w.pnl < 0 ? bot + 13 : top - 5, short(w.pnl, true), 'middle', '--ink');
+      if (i % every === 0) text(cx, H - B + 16, w.l, 'middle', '--muted');
+      const show = () => {
+        hover.style.fill = 'var(--chip)';
+        tip.innerHTML = '';
+        for (const [s, c] of [[w.t, 'sub'], [usd(w.pnl, true), cls(w.pnl)], [`${w.n} trade${w.n === 1 ? '' : 's'} closed`, 'sub']])
+          tip.appendChild(Object.assign(document.createElement('div'), {textContent: s, className: c}));
+        tip.style.display = 'block';
+        const left = Math.min(Math.max(cx - tip.offsetWidth / 2, 0), W - tip.offsetWidth);
+        tip.style.left = left + 'px';
+        tip.style.top = Math.max(0, top - tip.offsetHeight - 8) + 'px';
+      };
+      const hide = () => { hover.style.fill = 'transparent'; tip.style.display = 'none'; };
+      hover.addEventListener('pointerenter', show);
+      hover.addEventListener('pointerdown', show);
+      hover.addEventListener('pointerleave', hide);
+    });
+    const old = chart.querySelector('svg');
+    old ? chart.replaceChild(svg, old) : chart.insertBefore(svg, tip);
+  };
+  if (chart && window.ResizeObserver) {
+    let width = 0;
+    new ResizeObserver(() => { if (weekRows && chart.clientWidth !== width) { width = chart.clientWidth; drawWeeks(weekRows); } })
+      .observe(chart);
+  }
+  const apply = a => {
+    const fb = 1 + a.buy / 100;
+    const rows = recalc(a);
+    drawWeeks(rows);
+    const byId = new Map(rows.map(r => [String(r.i), r]));
+    for (const tr of root.querySelectorAll('tr[data-id]')) {
+      const r = byId.get(tr.dataset.id);
+      if (!r) continue;
+      const cell = f => tr.querySelector(`[data-f="${f}"]`);
+      cell('size').textContent = size(r.pos);
+      cell('entry').textContent = num(r.e);
+      cell('exit').textContent = num(r.x);
+      if (r.k) {
+        cell('pct').textContent = pct(r.pp);
+        cell('pct').className = 'right ' + cls(r.pp);
+        cell('usd').textContent = usd(r.pnl, true);
+        cell('usd').className = 'right ' + cls(r.pnl);
+      }
+    }
+    const done = rows.filter(r => r.k);
+    const cur = done.filter(r => r.p === 'c'), prev = done.filter(r => r.p === 'p');
+    const sum = rs => rs.reduce((s, r) => s + r.pnl, 0);
+    const realized = r2(sum(cur)), wins = cur.filter(r => r.pnl > 0).length;
+    set('realized', usd(realized, true), cls(realized));
+    const rate = cur.length ? Math.round(wins / cur.length * 100) + '%' : '\u2014';
+    set('winrate', rate);
+    set('winrate-full', cur.length ? `${rate} (${wins} of ${cur.length})` : '\u2014');
+    const ddText = dd => dd == null ? '\u2014' : usd(-dd);
+    const ddc = drawdown(cur), ddp = drawdown(prev);
+    set('dd-c', ddText(ddc), ddc ? 'neg' : '');
+    set('dd-p', ddText(ddp), ddp ? 'neg' : '');
+    if (data.cap) {
+      const prevSum = r2(sum(prev));
+      set('prev', usd(prevSum, true), cls(prevSum));
+      set('cap-c', data.cap.c == null ? '\u2014' : usd(data.cap.c * fb));
+      set('cap-p', data.cap.p == null ? '\u2014' : usd(data.cap.p * fb));
+    }
+    if (data.open) {
+      const [n, paid] = data.open;
+      set('open', `${usd(paid * fb)} (${n} trade${n === 1 ? '' : 's'})`);
+    }
+    const signed = v => (v > 0 ? '+' : v < 0 ? '\u2212' : '') + fmtPct(Math.abs(v)) + '%';
+    const custom = Object.keys(defaults).some(k => a[k] !== defaults[k]);
+    for (const el of root.querySelectorAll('[data-stat="note"]')) {
+      el.style.display = custom ? '' : 'none';
+      el.textContent = `Using this browser's settings: buys ${signed(a.buy)}, sells ${signed(a.sell)}, `
+        + `auto-close loss ${fmtPct(a.opt)}% (stock ${fmtPct(a.stock)}%).`;
+    }
+  };
+  const bar = root.querySelector('.lottery-assumptions');
+  const fill = a => { if (bar) for (const k in a) bar.querySelector(`[name=${k}]`).value = a[k]; };
+  if (bar) {
+    bar.style.display = 'flex';
+    bar.addEventListener('input', () => {
+      const raw = {};
+      for (const k in defaults) raw[k] = bar.querySelector(`[name=${k}]`).value;
+      const a = clean(raw);
+      for (const k in defaults) bar.querySelector(`[name=${k}]`).style.outline = a[k] === Number(raw[k]) && raw[k] !== '' ? '' : '1px solid #c33';
+      store(a);
+      apply(a);
+    });
+    bar.querySelector('button').addEventListener('click', () => {
+      forget();
+      for (const k in defaults) bar.querySelector(`[name=${k}]`).style.outline = '';
+      fill(defaults);
+      apply(defaults);
+    });
+  }
+  window.addEventListener('storage', e => { if (e.key === KEY) { const a = load(); fill(a); apply(a); } });
+  const a = load();
+  fill(a);
+  if (Object.keys(defaults).some(k => a[k] !== defaults[k])) apply(a);
+  else drawWeeks(recalc(a));
+})();</script></div><p class='sub' style='margin-top:28px'>A snapshot, not a live view: published Nov 6, 04:15 PM ET and refreshed each trading day at 11:00, 16:05, 16:15 ET. A recommendation is never counted as a position until its fill is confirmed.</p></div>
+</body>
+</html>
